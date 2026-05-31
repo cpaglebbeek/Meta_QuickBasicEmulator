@@ -1,9 +1,9 @@
 {
-  "version": "0.0.3",
-  "codename": "Davidoff",
+  "version": "0.0.4",
+  "codename": "Whitten",
   "released": "2026-06-01",
   "stable": false,
-  "type": "web-vendored-qbjs",
-  "milestone": "QBJS vendored (commit e3ca41c6, MIT) + dialect-adapter + GW/QB/QB45 pre-flight modes + 18/18 tests groen",
-  "next_milestone": "v0.0.4-Whitten — Decompiler BRUN-mode prototype in _Decompiler"
+  "type": "decompiler-brun-prototype",
+  "milestone": "Decompiler PE/MZ parser + BRUN-detector + signature-DB schema + Rust AST + watermark — 16/16 tests groen, synthetic fixtures",
+  "next_milestone": "v0.1.0-Letwin (MVP-1 LIVE op icthorse.nl/quickbasic-emulator/)"
 }

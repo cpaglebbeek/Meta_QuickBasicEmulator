@@ -17,12 +17,15 @@ Datums in DD-MM formaat. Bron tussen haakjes.
 - [x] Web: voeg GW-BASIC dialect-mode toe (pre-flight: line-numbers required + verbied SUB/FUNCTION/SELECT/DO/END IF) (01-06)
 - [x] Web: integreer Core test-suite via dialects.test.ts — e2e hello + loops + conditionals + procedures + arrays per dialect (01-06, 18/18 vitest groen)
 
-## v0.0.3 → v0.0.4 (Davidoff → Whitten)
+## v0.0.3 → v0.0.4 (Davidoff → Whitten) — AFGEROND 01-06
 
-- [ ] Decompiler: Rust skeleton met clap-CLI + serde JSON-output (31-05, newp-sessie)
-- [ ] Decompiler: BRUN-mode prototype op één test-EXE (31-05, newp-sessie)
-- [ ] Decompiler: signature-DB-schema (JSON) (31-05, newp-sessie)
-- [ ] Decompiler: BYO-BRUN45 instructie in signatures/README.md (31-05, newp-sessie)
+- [x] Decompiler: Rust skeleton met clap-CLI + serde JSON-output (01-06, library + binary target)
+- [x] Decompiler: BRUN-mode prototype (heuristic: BRUN45-marker + size-range, 4 confidence-levels) (01-06, synthetic fixtures i.p.v. echte QB45.exe per P-QBE-04)
+- [x] Decompiler: signature-DB-schema (JSON v1.0) (01-06, schema.json + Rust SignatureDb + roundtrip-test)
+- [x] Decompiler: BYO-BRUN45 instructie in signatures/README.md (01-06, CLI + Rust-API voorbeelden toegevoegd)
+- [x] Decompiler: PE/MZ header parser (01-06, 28-byte minimum + e_lfanew/PE-magic detector)
+- [x] Decompiler: watermark per P-QBE-05 (01-06, niet-uitschakelbaar, 3 tests)
+- [x] Decompiler: Rust AST mirror van Core types (01-06, src/ast.rs + to_bas() renderer)
 
 ## v0.0.4 → v0.1.0 (Whitten → Letwin) — MVP-1 LIVE
 
