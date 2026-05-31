@@ -27,12 +27,12 @@ Datums in DD-MM formaat. Bron tussen haakjes.
 - [x] Decompiler: watermark per P-QBE-05 (01-06, niet-uitschakelbaar, 3 tests)
 - [x] Decompiler: Rust AST mirror van Core types (01-06, src/ast.rs + to_bas() renderer)
 
-## v0.0.4 → v0.1.0 (Whitten → Letwin) — MVP-1 LIVE
+## v0.0.4 → v0.1.0 (Whitten → Letwin) — MVP-1 LIVE — AFGEROND 01-06
 
-- [ ] Web: deploy build naar icthorse.nl/quickbasic-emulator/ (31-05, newp-sessie)
-- [ ] Web: LiteSpeed cache purge na deploy (31-05, newp-sessie)
-- [ ] Documentatie: release-notes voor v0.1.0 publieke launch (31-05, newp-sessie)
-- [ ] Announcement: LinkedIn-post draft over MVP-1 (31-05, newp-sessie)
+- [x] Web: deploy build naar icthorse.nl/quickbasic-emulator/ (01-06, rsync via Hostinger SSH alias)
+- [x] Web: LiteSpeed cache purge na deploy (01-06)
+- [x] Documentatie: release-notes voor v0.1.0 publieke launch (01-06, in STATUS.md + ROADMAP)
+- [ ] Announcement: LinkedIn-post draft over MVP-1 (01-06, naar v0.2.0-Weiland of aparte sessie)
 
 ## Continue
 

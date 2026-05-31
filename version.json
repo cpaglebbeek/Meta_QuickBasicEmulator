@@ -1,9 +1,9 @@
 {
-  "version": "0.0.4",
-  "codename": "Whitten",
+  "version": "0.1.0",
+  "codename": "Letwin",
   "released": "2026-06-01",
-  "stable": false,
-  "type": "decompiler-brun-prototype",
-  "milestone": "Decompiler PE/MZ parser + BRUN-detector + signature-DB schema + Rust AST + watermark — 16/16 tests groen, synthetic fixtures",
-  "next_milestone": "v0.1.0-Letwin (MVP-1 LIVE op icthorse.nl/quickbasic-emulator/)"
+  "stable": true,
+  "type": "mvp-1-live",
+  "milestone": "MVP-1 LIVE op icthorse.nl/quickbasic-emulator/",
+  "next_milestone": "v0.2.0-Weiland (Decompiler BRUN-mode stabiel + parser-impl)"
 }
