@@ -8,7 +8,7 @@ Codenaam-thema: **Microsoft BASIC-pioniers** (1975-1991), behalve v1.0.0 (Kemeny
 |---|---|---|---|
 | **v0.0.1** | **Gates** | Bill Gates — co-author Altair BASIC (1975) | ✅ Skeleton: 6 repos + CI |
 | **v0.0.2** | **Allen** | Paul Allen — co-author Altair BASIC | ✅ Core: 35 AST-Statement-types + 3 dialect-specs (52+49+53 statements + 33+38+45 builtins) + 28/28 tests groen + 15 sample-programs |
-| v0.0.3 | Davidoff | Monte Davidoff — math-package Altair BASIC | Web: fork QBJS + GW-BASIC dialect-mode |
+| **v0.0.3** | **Davidoff** | Monte Davidoff — math-package Altair BASIC | ✅ Web: QBJS vendored (commit e3ca41c6, MIT) + dialect-adapter + GW/QB/QB45 pre-flight modes + 18/18 tests groen + 6.4MB build |
 | v0.0.4 | Whitten | Greg Whitten — chief architect MS BASIC '80s, QuickBASIC design | Decompiler: BRUN-mode prototype |
 | **v0.1.0** | **Letwin** | Gordon Letwin — co-designer GW-BASIC, OS/2 architect | **Web MVP-1 LIVE op icthorse.nl/quickbasic-emulator/** |
 | v0.2.0 | Weiland | Ric Weiland — porteerde BASIC naar 8080/6502 | Decompiler: BRUN-mode stabiel |

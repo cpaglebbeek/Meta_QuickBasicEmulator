@@ -11,11 +11,11 @@ Datums in DD-MM formaat. Bron tussen haakjes.
 - [x] Core: maak `tests/sample_*.bas` per dialect (01-06, 15 samples + 4 expected.txt)
 - [x] Core: spec.test.ts met 23 consistency-checks (28/28 tests groen totaal)
 
-## v0.0.2 → v0.0.3 (Allen → Davidoff)
+## v0.0.2 → v0.0.3 (Allen → Davidoff) — AFGEROND 01-06
 
-- [ ] Web: fork QBJS in `QuickBasicEmulator_Web` (vendoring + NOTICE) (31-05, newp-sessie)
-- [ ] Web: voeg GW-BASIC dialect-mode toe (line-numbers + tokenized parser) (31-05, newp-sessie)
-- [ ] Web: integreer Core test-suite (Vitest runt sample.bas-bestanden door Web-runtime) (31-05, newp-sessie)
+- [x] Web: fork QBJS in `QuickBasicEmulator_Web` (vendoring + NOTICE) (01-06, MIT licentie geverifieerd, commit e3ca41c6)
+- [x] Web: voeg GW-BASIC dialect-mode toe (pre-flight: line-numbers required + verbied SUB/FUNCTION/SELECT/DO/END IF) (01-06)
+- [x] Web: integreer Core test-suite via dialects.test.ts — e2e hello + loops + conditionals + procedures + arrays per dialect (01-06, 18/18 vitest groen)
 
 ## v0.0.3 → v0.0.4 (Davidoff → Whitten)
 

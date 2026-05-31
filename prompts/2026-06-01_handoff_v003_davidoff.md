@@ -1,8 +1,9 @@
 ---
 date: 2026-06-01
 repo: Meta_QuickBasicEmulator
-status: open
-resume: "v0.0.3-Davidoff: QBJS-fork in _Web + GW-BASIC dialect-mode + e2e hello-world"
+status: done
+resume: ""
+completed_in: "Direct opvolg-sessie 2026-06-01 — 'bouw verder' i.p.v. verse sessie"
 ---
 
 # Hand-off — v0.0.3-Davidoff start in verse sessie
