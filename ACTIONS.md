@@ -2,13 +2,14 @@
 
 Datums in DD-MM formaat. Bron tussen haakjes.
 
-## v0.0.1 → v0.0.2 (Gates → Allen)
+## v0.0.1 → v0.0.2 (Gates → Allen) — AFGEROND 01-06
 
-- [ ] Core: bepaal AST-types schema (sub/function/label/statement-typen) (31-05, newp-sessie)
-- [ ] Core: schrijf dialect_gwbasic.json met top-50 statements (31-05, newp-sessie)
-- [ ] Core: schrijf dialect_qbasic.json met top-50 statements (31-05, newp-sessie)
-- [ ] Core: schrijf dialect_qb45.json met top-50 statements (31-05, newp-sessie)
-- [ ] Core: maak `tests/sample_*.bas` per dialect (31-05, newp-sessie)
+- [x] Core: bepaal AST-types schema (sub/function/label/statement-typen) (01-06)
+- [x] Core: schrijf dialect_gwbasic.json met top-50 statements (01-06, 52 statements + 33 builtins)
+- [x] Core: schrijf dialect_qbasic.json met top-50 statements (01-06, 49 statements + 38 builtins)
+- [x] Core: schrijf dialect_qb45.json met top-50 statements (01-06, 53 statements + 45 builtins)
+- [x] Core: maak `tests/sample_*.bas` per dialect (01-06, 15 samples + 4 expected.txt)
+- [x] Core: spec.test.ts met 23 consistency-checks (28/28 tests groen totaal)
 
 ## v0.0.2 → v0.0.3 (Allen → Davidoff)
 
