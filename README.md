@@ -72,6 +72,8 @@ Zie `ARCHITECTURE.md` voor de fasering (fase-1 wrap → fase-2 Rust-Core migrati
 - [ARCHITECTURE.md](./ARCHITECTURE.md) — componenten + relaties cross-repo
 - [ROADMAP.md](./ROADMAP.md) — codenamen v0.0.1 → v1.0.0 + milestones
 - [LEGAL.md](./LEGAL.md) — IP-beleid, MS-trademarks, BYO-BRUN45-policy
+- [docs/PRINCIPLES.md](./docs/PRINCIPLES.md) — Dragon1-stijl genummerd register P-QBE-01..10
+- [docs/DEPENDENCIES.md](./docs/DEPENDENCIES.md) — component-deps + oorzaak-gevolg-matrix
 - [BUGLIST.md](./BUGLIST.md) — bekende issues + terugkerende patronen
 - [ACTIONS.md](./ACTIONS.md) — openstaande acties
 - [CLAUDE.md](./CLAUDE.md) — sessie-regels

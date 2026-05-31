@@ -35,3 +35,13 @@ Datums in DD-MM formaat. Bron tussen haakjes.
 - [ ] Test-corpus uitbreiden (Nibbles, Gorillas, Money, Donkey als ground-truth)
 - [ ] BUGLIST.md bijhouden in elke repo
 - [ ] CLAUDE.md per repo synced houden met cross-repo conventies
+
+## Sanitycheck follow-ups (uit v0.0.1-Gates sessie)
+
+- [x] P1-1 CI workflows actief in 5 platform-repos (01-06)
+- [x] P2-1 docs/PRINCIPLES.md aangemaakt (01-06)
+- [x] P2-2 docs/DEPENDENCIES.md aangemaakt (01-06)
+- [ ] P3-1 docs/screens/ aanmaken bij v0.0.3-Davidoff (Web krijgt UI)
+- [ ] P3-2 DESIGN_TOKENS.md aanmaken bij v0.0.3-Davidoff
+- [ ] P3-3 CONTENT_INVENTORY.md aanmaken bij v0.0.3-Davidoff
+- [ ] P3-4 CHANGELOG.md per repo aanmaken bij v0.1.0-Letwin
