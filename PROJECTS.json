@@ -1,0 +1,71 @@
+{
+  "project": {
+    "name": "QuickBasicEmulator",
+    "version": "0.0.1",
+    "codename": "Gates",
+    "released": "2026-05-31",
+    "ecosystem": "Retro_Computing",
+    "sub_master": "cpaglebbeek/Meta_Retro_Computing",
+    "meta_repo": {
+      "name": "Meta_QuickBasicEmulator",
+      "github": "cpaglebbeek/Meta_QuickBasicEmulator",
+      "localPath": "/Users/christian/Documents/Gemini_Projects/Meta_QuickBasicEmulator",
+      "branch": "main"
+    },
+    "platform_repos": [
+      {
+        "name": "QuickBasicEmulator_Core",
+        "github": "cpaglebbeek/QuickBasicEmulator_Core",
+        "localPath": "/Users/christian/Documents/Gemini_Projects/QuickBasicEmulator_Core",
+        "branch": "main",
+        "tech": "TypeScript + Vitest",
+        "role": "Dialect-spec, AST-types, gedeelde test-suite"
+      },
+      {
+        "name": "QuickBasicEmulator_Web",
+        "github": "cpaglebbeek/QuickBasicEmulator_Web",
+        "localPath": "/Users/christian/Documents/Gemini_Projects/QuickBasicEmulator_Web",
+        "branch": "main",
+        "tech": "Vanilla JS + Vite (toekomst: fork QBJS)",
+        "role": "Browser-runtime, deploy icthorse.nl/quickbasic-emulator/"
+      },
+      {
+        "name": "QuickBasicEmulator_X86",
+        "github": "cpaglebbeek/QuickBasicEmulator_X86",
+        "localPath": "/Users/christian/Documents/Gemini_Projects/QuickBasicEmulator_X86",
+        "branch": "main",
+        "tech": "C++/CMake (toekomst: fork QB64-PE)",
+        "role": "Native runtime Windows/Linux/macOS"
+      },
+      {
+        "name": "QuickBasicEmulator_Android",
+        "github": "cpaglebbeek/QuickBasicEmulator_Android",
+        "localPath": "/Users/christian/Documents/Gemini_Projects/QuickBasicEmulator_Android",
+        "branch": "main",
+        "tech": "Kotlin + Jetpack Compose + WebView",
+        "role": "Android-app, MVP-2 WebView, MVP-3 native"
+      },
+      {
+        "name": "QuickBasicEmulator_Decompiler",
+        "github": "cpaglebbeek/QuickBasicEmulator_Decompiler",
+        "localPath": "/Users/christian/Documents/Gemini_Projects/QuickBasicEmulator_Decompiler",
+        "branch": "main",
+        "tech": "Rust + serde + clap",
+        "role": "Decompiler-CLI voor QB 4.5 .exe (BRUN + Stand-alone modes)"
+      }
+    ],
+    "visibility": "PUBLIC",
+    "license": "AGPL-3.0",
+    "live_demo": "icthorse.nl/quickbasic-emulator/ (vanaf v0.1.0-Letwin)",
+    "decompiler_modes": {
+      "v0.0.4-Whitten": "BRUN-mode prototype",
+      "v0.2.0-Weiland": "BRUN-mode stabiel",
+      "v0.4.0-Chien": "Stand-alone EXE mode"
+    },
+    "architecture_phases": {
+      "phase_1": "Wrap (QBJS-fork + QB64-PE-fork), Core in TS",
+      "phase_2": "Core migreert naar Rust + WASM",
+      "phase_3": "Unified Rust-runtime, forks afgebouwd"
+    }
+  }
+}
