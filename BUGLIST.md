@@ -39,3 +39,11 @@ Geen.
 ## Template per bug
 
 Zie `Meta_Master/templates/BUGLIST_TEMPLATE.md`.
+
+## QBJS-RUNTIME-GAP (gevonden 01-06 bij K2026C test)
+
+- **Pattern**: QBJS-runtime ondersteunt geen classic GOTO/GOSUB/RETURN. Onze `dialect_qbasic.json` markeert ze als supported (klopt voor echte QBasic), maar QBJS-runtime negeert ze met `WARN ignoring line` → cascade `WEND without WHILE` / `IF without END IF` errors.
+- **Voorbeeld**: K2026C.BAS (Theo's kalender) gebruikt GOTO eindewhile + GOSUB menu-dispatcher. QBJS kan dit niet draaien.
+- **Pre-flight-implicatie**: v0.0.3-Davidoff dialect-adapter detecteert dit NIET want het is een runtime-cap, niet dialect-cap.
+- **Voorgestelde fix v0.0.5+**: nieuwe `_Core/spec/runtime_capability_qbjs.json` met QBJS-feature-coverage-matrix. Pre-flight breidt uit met runtime-aware warnings.
+- **Workaround**: gebruik `QuickBasicEmulator_X86` (v0.3.0-Chen, fork QB64-PE) voor classic-BASIC programs met GOTO/GOSUB.
