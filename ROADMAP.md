@@ -17,7 +17,7 @@ Codenaam-thema: **Microsoft BASIC-pioniers** (1975-1991), behalve v1.0.0 (Kemeny
 | v0.5.0 | Hopper | Grace Hopper — compiler-pionier (eerbetoon ondanks niet MS-direct) | X86 stabiel |
 | v0.6.0 | Lampson | Butler Lampson — ACM Turing 1992 | Android WebView APK |
 | ... | ... | ... | tussenversies naar behoefte |
-| **v1.0.0** | **Kemeny** | John Kemeny — co-author BASIC (Dartmouth 1964) | **Release: alle 3 dialecten × 3 platforms + decompiler beide modes** |
+| **v1.0.0** | **Kemeny** | John Kemeny — co-author BASIC (Dartmouth 1964) | **REDESIGN besloten 01-06**: native compiler-as-a-service (QB64-PE op HC55, Docker + Xvfb + noVNC stream naar browser). Legacy DOS-BASIC zoals K2026 draait 100% via deze route. F1-F4 MVP (compile + visual + keyboard/mouse). Aanleiding: QBJS-token-patch-loop bewees fundamentele incompat met DOS-BASIC compound-syntax. |
 
 ## Codenaam-toekenning-regel
 
