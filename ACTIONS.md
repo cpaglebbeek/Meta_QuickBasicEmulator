@@ -40,6 +40,12 @@ Datums in DD-MM formaat. Bron tussen haakjes.
 - [ ] BUGLIST.md bijhouden in elke repo
 - [ ] CLAUDE.md per repo synced houden met cross-repo conventies
 
+## v0.2.0-Weiland (geplande backlog uit K2026C-test 01-06)
+
+- [ ] Classic-to-structured transformer (`_Web/src/transform/classic-to-structured.ts`): herken GOSUB-label blocks → genereer SUB-equivalent, GOTO eindewhile → restructure naar EXIT-WHILE. Maakt K2026C-stijl programs draaibaar in QBJS zonder X86-runtime. Effort: 4-8u.
+- [ ] runtime_capability_qbjs.json matrix in `_Core/spec/`: machine-readable feature-coverage per runtime. Pre-flight pakt dit op.
+- [ ] Decompiler v0.2.0-Weiland: BRUN-mode stabiel — echte p-code parser i.p.v. heuristic.
+
 ## Sanitycheck follow-ups (uit v0.0.1-Gates sessie)
 
 - [x] P1-1 CI workflows actief in 5 platform-repos (01-06)
