@@ -46,6 +46,36 @@ Datums in DD-MM formaat. Bron tussen haakjes.
 - [x] runtime_capability_qbjs.json matrix in `_Core/spec/`: 38 full + 7 partial + 11 none, met workaround per gap (01-06, 24 tests)
 - [ ] Decompiler v0.2.0-Weiland: BRUN-mode stabiel — echte p-code parser i.p.v. heuristic (uitgesteld naar v0.2.1 of v0.3.0)
 
+## v0.3.0-Chen → v0.3.10-Chen Web — AFGEROND 01-06
+
+- [x] Web v0.3.1: transformer pass-2 forward-GOTO→EXIT + LABEL_RE indented-labels-fix (49/49 tests)
+- [x] Web v0.3.2-v0.3.10: 9 transformer-passes voor K2026 DOS-BASIC compound-syntax (pass-3a t/m pass-3c: strip-`:`-tussen-THEN-en-ELSE, split single-line WHILE/WEND, etc.)
+- [x] X86 v0.3.0-Chen LIVE: QB64-PE submodule (722b7d99 MIT) + wrapper CLI + K2026C native binary 1.4MB
+
+## v1.0.0-Kemeny — AFGEROND 01-06 — LIVE op `horsecloud55.ddns.net/basic/native/`
+
+- [x] **F1** native compile-as-a-service backend (`_X86/server/` qbe-runner.service :4001 + Docker `qbe-compiler:latest` image) — commits `f0afe61` → `33d37e5` → `0e3732c`
+- [x] **F2** runtime-stream Xvfb + x11vnc + websockify in container + nginx ws-proxy `/qbe-vnc/<port>/` + mouse/keyboard round-trip — commit `08ec8b7`
+- [x] **F3** frontend-form `/basic/native/` met Compile/Run/Stop + noVNC iframe — commit `08ec8b7` (frontend onderdeel)
+- [x] **F4** production polish: UX error-handling (429/400/413/network) + loading-spinner + rate-limit 20/h per IP + dangerous-keyword filter (SYSTEM/CHAIN/FILES/RUN "/_OS/_OPENCLIENT/_CONNECT/_HTTPS) + sample-dropdown (Hello/INPUT/SCREEN/FOR/COLOR) + auto-stop beforeunload — commit `6d5f0ed`
+- [x] **F6** security hardening: gVisor runsc voor compile-containers + cap-drop=ALL + no-new-privileges + audit-log /var/log/qbe-runner/audit.log met source-sha256 + health-endpoint sandbox-section — commit `fff4460`
+- [ ] **F5** sound (post-MVP, pulseaudio in runtime-container)
+
+## Volgende: v0.4.0-Chien — Decompiler Stand-alone EXE mode
+
+- [ ] BCOM45 signature-DB opbouwen (BYO-policy per P-QBE-04, geen MS-binaries in repo)
+- [ ] PE-import-table parser uitbreiden (huidige BRUN-detector dekt alleen wrapped binaries)
+- [ ] Functie-fingerprinting algoritme (signature-hash → AST-fragment)
+- [ ] CLI flag `--mode=standalone` toevoegen + watermark per P-QBE-05
+- [ ] Test-fixtures: synthetic stand-alone EXE-samples (geen echte QB45-output)
+
+## Repo-admin sync — AFGEROND 01-06
+
+- [x] _X86/version.json bump v0.3.0-Chen → v1.0.0-Kemeny met F1-F6 history
+- [x] Meta/version.json bump v0.3.0-Chen → v1.0.0-Kemeny met live_demos
+- [x] ROADMAP.md v1.0.0-Kemeny row REDESIGN → LIVE
+- [x] F2-handoff `prompts/2026-06-01_handoff_v100_kemeny_F2.md` status `open` → `closed`
+
 ## Sanitycheck follow-ups (uit v0.0.1-Gates sessie)
 
 - [x] P1-1 CI workflows actief in 5 platform-repos (01-06)

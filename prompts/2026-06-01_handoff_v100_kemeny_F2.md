@@ -1,9 +1,19 @@
 ---
 date: 2026-06-01
 repo: Meta_QuickBasicEmulator
-status: open
-resume: "v1.0.0-Kemeny F2: Xvfb + x11vnc + noVNC voor runtime-stream van compiled binary naar browser"
+status: closed
+resume: ""
 ---
+
+## RESOLVED — 01-06
+
+F2 is LIVE via commit `08ec8b7` in `QuickBasicEmulator_X86` (v0.5.0-Hopper-tag, functioneel doorgerold naar v1.0.0-Kemeny). End-to-end: Compile (Docker sandbox QB64-PE) → Run (Xvfb :100+ + binary + x11vnc + websockify in container) → noVNC iframe in browser via nginx ws-proxy `/qbe-vnc/<port>/` → Mouse/keyboard round-trip werkt. Daarna gerold naar F4 production polish (`6d5f0ed`) + F6 security hardening met gVisor (`fff4460`). MVP F1-F4 + F6 LIVE op `horsecloud55.ddns.net/basic/native/`. Alleen F5 sound resteert (post-MVP).
+
+Repo-admin sync afgerond: _X86/version.json + Meta/version.json + ROADMAP.md + ACTIONS.md bijgewerkt naar v1.0.0-Kemeny LIVE-stand.
+
+---
+
+# Originele handoff (historisch)
 
 # F2 Handoff — runtime-stream voor compiled binary
 

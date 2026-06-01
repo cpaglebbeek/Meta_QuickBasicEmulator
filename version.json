@@ -1,13 +1,15 @@
 {
-  "version": "0.3.0",
-  "codename": "Chen",
+  "version": "1.0.0",
+  "codename": "Kemeny",
   "released": "2026-06-01",
   "stable": true,
-  "type": "x86-native-runtime-live",
-  "milestone": "X86 native runtime LIVE via QB64-PE submodule — K2026C.BAS compileert + draait native met alle GOTO/GOSUB intact",
+  "type": "v1-mvp-live-native-compiler-as-a-service",
+  "milestone": "v1.0.0-Kemeny F1-F4 + F6 LIVE — native compiler-as-a-service met QB64-PE op HC55 (Docker sandbox + Xvfb + x11vnc + noVNC), legacy DOS-BASIC zoals K2026 draait 100% in browser met mouse/keyboard round-trip. gVisor + rate-limit + audit-log security.",
   "live_demos": {
-    "web": "https://icthorse.nl/quickbasic-emulator/",
-    "x86": "compile lokaal: ./vendor/qb64pe/qb64pe -c input.bas -o output"
+    "web_qbjs": "https://icthorse.nl/quickbasic-emulator/",
+    "web_qbjs_hc55": "https://horsecloud55.ddns.net/basic/",
+    "native_compile_run": "https://horsecloud55.ddns.net/basic/native/",
+    "x86_local": "compile lokaal: ./vendor/qb64pe/qb64pe -c input.bas -o output"
   },
-  "next_milestone": "v0.4.0-Chien: Decompiler Stand-alone EXE mode (BCOM45 signature-DB)"
+  "next_milestone": "v0.4.0-Chien: Decompiler Stand-alone EXE mode (BCOM45 signature-DB) — of v1.0.0-Kemeny F5 sound (post-MVP, pulseaudio in runtime-container)"
 }

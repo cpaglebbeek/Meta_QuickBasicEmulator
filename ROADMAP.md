@@ -14,10 +14,10 @@ Codenaam-thema: **Microsoft BASIC-pioniers** (1975-1991), behalve v1.0.0 (Kemeny
 | **v0.2.0** | **Weiland** | Ric Weiland — porteerde BASIC naar 8080/6502 | ✅ **Classic-to-structured transformer** in Web — herschrijft veilige GOSUB-RETURN blocks naar SUB procedures (K2026C-style draaibaar). Core v0.0.3 runtime_capability_qbjs.json matrix (38f+7p+11n). 43+52 tests groen. |
 | **v0.3.0** | **Chen** | David Chen — QuickBASIC compiler-team | ✅ **X86 native runtime LIVE** — QB64-PE als git submodule (commit 722b7d99 MIT), wrapper CLI compileert, **K2026C draait native** (1.4MB binary, alle GOTO/GOSUB intact, geen runtime-errors zoals in QBJS) |
 | v0.4.0 | Chien | (alternatief Chen-variant — TBD bij release) | Decompiler: Stand-alone EXE mode |
-| v0.5.0 | Hopper | Grace Hopper — compiler-pionier (eerbetoon ondanks niet MS-direct) | X86 stabiel |
+| **v0.5.0** | **Hopper** | Grace Hopper — compiler-pionier (eerbetoon ondanks niet MS-direct) | ✅ **F1+F2 (versmolten in v1.0.0)** — qbe-runner backend + Docker sandbox compile + Xvfb/x11vnc/noVNC stream + nginx ws-proxy + mouse/keyboard round-trip. Commits `f0afe61` → `08ec8b7`. Functioneel doorgerold naar v1.0.0-Kemeny. |
 | v0.6.0 | Lampson | Butler Lampson — ACM Turing 1992 | Android WebView APK |
 | ... | ... | ... | tussenversies naar behoefte |
-| **v1.0.0** | **Kemeny** | John Kemeny — co-author BASIC (Dartmouth 1964) | **REDESIGN besloten 01-06**: native compiler-as-a-service (QB64-PE op HC55, Docker + Xvfb + noVNC stream naar browser). Legacy DOS-BASIC zoals K2026 draait 100% via deze route. F1-F4 MVP (compile + visual + keyboard/mouse). Aanleiding: QBJS-token-patch-loop bewees fundamentele incompat met DOS-BASIC compound-syntax. |
+| **v1.0.0** | **Kemeny** | John Kemeny — co-author BASIC (Dartmouth 1964) | ✅ **LIVE 01-06** op `horsecloud55.ddns.net/basic/native/` — native compiler-as-a-service (QB64-PE op HC55, Docker sandbox + Xvfb + noVNC stream + WSS keyboard/mouse). Legacy DOS-BASIC werkt 100% (K2026.BAS compileert + draait native in browser). **F1+F2** versmolten met v0.5.0-Hopper commits (`f0afe61`/`08ec8b7`). **F3** = frontend-form `/basic/native/`. **F4 production** (`6d5f0ed`) = UX error-handling + 429/400/413 + rate-limit 20/h per IP + dangerous-keyword filter + sample-dropdown + auto-stop beforeunload. **F5** sound = post-MVP. **F6 security** (`fff4460`) = gVisor runsc + cap-drop=ALL + no-new-privileges + audit-log met source-sha256. Aanleiding REDESIGN: QBJS-token-patch-loop bewees fundamentele incompat met DOS-BASIC compound-syntax. |
 
 ## Codenaam-toekenning-regel
 
