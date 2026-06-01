@@ -61,6 +61,15 @@ Datums in DD-MM formaat. Bron tussen haakjes.
 - [x] **F6** security hardening: gVisor runsc voor compile-containers + cap-drop=ALL + no-new-privileges + audit-log /var/log/qbe-runner/audit.log met source-sha256 + health-endpoint sandbox-section — commit `fff4460`
 - [ ] **F5** sound (post-MVP, pulseaudio in runtime-container)
 
+## v1.0.0-Kemeny F4 verificatie 01-06 — follow-ups
+
+Live-curl-verificatie 01-06 bevestigde server-side F4-features (forbidden-keyword SYSTEM/_OPENCLIENT → 400 met JSON, valid compile → 200 + sessionId + binSize, health-endpoint sandbox-section + rate-limit-config). Twee verbeter-punten geconstateerd, geen F4-bug:
+
+- [ ] **Multer file-size limit** in `_X86/server/server.js` — 1MB body bufferde tot 30s timeout i.p.v. vroege 413. Toevoegen: `multer({ limits: { fileSize: 256_000 } })` of vergelijkbaar. Niet kritisch (gVisor + cap-drop dekt resource-misbruik) maar nice-to-have hardening tegen DoS via grote multipart.
+- [ ] **`X-RateLimit-*` response-headers** in `_X86/server/server.js` — momenteel alleen via 429-response-body zichtbaar. Standaard `X-RateLimit-Limit` / `X-RateLimit-Remaining` / `X-RateLimit-Reset` headers in elke `/api/compile`-response zou clients pre-emptief laten weten waar ze staan (i.p.v. blind doorgaan tot 429).
+- [ ] **HTTP/2 multipart 502-onderzoek** — `curl --http2 -F` geeft 502, `--http1.1` werkt. Browsers werken wel (eigen HTTP/2-stream-framing). Mogelijk nginx-proxy-buffer-config kwestie. Niet urgent (productie werkt) maar verdient root-cause-check als andere clients (CLI-tools, CI) ooit komen.
+- [ ] **Visuele UI-tests v1.0.0-Kemeny F4** — spinner-animatie tijdens compile, sample-dropdown UX, noVNC-iframe rendering, mouse/keyboard round-trip in VNC. Vereist browser-screenshot (curl-only verificatie dekte alleen API + HTML-source).
+
 ## Volgende: v0.4.0-Chien — Decompiler Stand-alone EXE mode
 
 - [ ] BCOM45 signature-DB opbouwen (BYO-policy per P-QBE-04, geen MS-binaries in repo)
