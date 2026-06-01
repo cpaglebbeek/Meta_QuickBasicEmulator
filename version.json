@@ -1,10 +1,10 @@
 {
-  "version": "0.1.6",
-  "codename": "Letwin",
+  "version": "0.2.0",
+  "codename": "Weiland",
   "released": "2026-06-01",
   "stable": true,
-  "type": "mvp-1-live",
-  "milestone": "MVP-1 LIVE + 6 patches (file-loader, runtime-warnings, share-URL, dual Run-buttons, limit-notice)",
+  "type": "transformer-plus-matrix",
+  "milestone": "Classic-to-structured transformer (Web) + runtime_capability_qbjs.json matrix (Core) — K2026C-style runtimebaar zonder X86",
   "live_url": "https://icthorse.nl/quickbasic-emulator/",
-  "next_milestone": "v0.2.0-Weiland (Decompiler BRUN-mode stabiel + classic-to-structured transformer + runtime-cap matrix)"
+  "next_milestone": "v0.3.0-Chen (X86 fork QB64-PE, GOTO native runtime)"
 }
